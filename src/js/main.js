@@ -169,7 +169,10 @@ let mascota = {
         nombrePropietario: "Camilo",
         apellidoPropietario: "Barreneche",
         tipoDocumento: "CC",
-        documento: "1026155751"
+        documento: "1026155751",
+    },
+    infoMascota: function() {
+        console.log(`${this.nombre}`)
     }
 }
 
@@ -181,5 +184,7 @@ let {
 console.log(`El nombre de la mascota es ${nombreMascota} y tiene ${edadMascota}.`);
 
 console.log(`El nombre del propietario es ${mascota.propietario.nombrePropietario} ${mascota.propietario.apellidoPropietario} con cédula ${mascota.propietario.tipoDocumento} ${mascota.propietario.documento}.`);
+
+mascota.infoMascota()
 
 console.groupEnd()
